@@ -21,6 +21,8 @@ public class Creature_Animation : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		RunPara = false;
+
 		// check if being drag
 		DragPara = _CD.dragging;
 
@@ -29,8 +31,6 @@ public class Creature_Animation : MonoBehaviour {
 			// check if not happy 
 			if(!HappyPara){
 				RunPara = true;	
-			}else{
-				RunPara = false;
 			}
 		}
 
